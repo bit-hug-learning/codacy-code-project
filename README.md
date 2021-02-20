@@ -2,6 +2,7 @@
 
 Every section is going to have its own branch. Main branch shouldn't be touched.
 This project is going to be mobile first.
+We're gonna use BEM methodology.
  
 ### Width-breakpoints
 (Recommended to use max-width and min-width)
@@ -14,7 +15,8 @@ This project is going to be mobile first.
 
 ### Section assignation
 - General Styles -> Yeliana
-- Section 1: Header & Hero -> Cristian & Gonzalo & Franco
+- Header: -> Cristian & Franco
+- Section 1: Hero -> Gonzalo
 - Section 2: -> Santiago
 - Section 3: -> Sarley 
 - Section 4: -> Julián & Aleja
