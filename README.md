@@ -15,7 +15,8 @@ We're gonna use BEM methodology.
 
 ### Section assignation
 - General Styles -> Yeliana
-- Section 1: Header & Hero -> Cristian & Gonzalo & Franco
+- Header: -> Cristian & Franco
+- Section 1: Hero -> Gonzalo
 - Section 2: -> Santiago
 - Section 3: -> Sarley 
 - Section 4: -> Julián & Aleja
