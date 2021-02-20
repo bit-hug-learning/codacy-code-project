@@ -22,3 +22,5 @@ This project is going to be mobile first.
 - Section 6: Carousel -> Rafa 
 - Section 7: -> Gonzalo
 - Section 8: Footer -> 
+
+edited
