@@ -24,3 +24,5 @@ We're gonna use BEM methodology.
 - Section 6: Carousel -> Rafa 
 - Section 7: -> Gonzalo
 - Section 8: Footer -> 
+
+edited
