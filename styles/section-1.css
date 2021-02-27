@@ -1,0 +1,277 @@
+/* Orden de las propiedades de los selectores:
+1. Posicionamiento: display, position(static, relative, absolute, etc), etc.
+2. Modelo caja: content(width,height,min/max), padding, border, margin
+3. Tipografía: font-family, font-size, font-weight, line-height, etc.
+4. Visuales-estética: color, background,  border-radius, box-shadow, etc.
+5. Otros: transition, animation-, etc.  */
+
+  /* 
+  display:
+  position: 
+  left/right/top/bottom: 
+
+  width/(min-max): 
+  height/(min-max): 
+  padding:
+  margin: 
+  border:
+
+  font-family:
+  font-size:
+  font-weight:
+  line-height:
+
+  color:
+  background: 
+  border-radius: 
+  box-shadow: 
+  cursor: 
+
+  transition:
+  animation-name: 
+  animation-duration: 
+  animation-iteration-count:  
+  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .body {
+    min-width: 320px;
+    margin: 0px;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* color: rgba(250, 250, 250, 0.75); */
+  }
+  .hero {
+    /* height: 1145px; */
+    /* background: linear-gradient(135deg,#27326e, #4c6cd3 120%); */
+
+  }
+  .hero__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+  }
+  .hero__description {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    align-self: center;
+  }
+  .hero__title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+  }
+  .hero__description p {
+    margin-bottom: 2rem;
+  }
+  .hero__description a {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1d3060;
+    background-color: #48e0a6;
+    border-radius: 5px;
+  }
+  .hero-imgvid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  .hero-image {
+    width: 100%;
+    opacity: 0.6; 
+  }
+  .hero-video {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.75;
+    box-shadow: rgb(148, 148, 148) 0px 0px 15px -2px;
+  }
+  .circle-animation {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    animation-name: pulsing-circle;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulsing-circle {
+    0% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.8);
+    }
+  }
+  .supported-languages {
+    margin: 40px 0 20px;
+    text-align: center;
+  }
+  .logos-hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px;
+    gap: 4vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .logos-hero {
+    width: 100%;
+    height: 100%;
+    max-width: 117px;
+    max-height: 117px;
+    background-image: url("../assets/images/apex.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity .75s linear 0s;
+    /* La sgt es una alternativa a justify/align-items del .logos-hero-container */
+    /* justify-self: center;
+    align-self: center; */
+  }
+  .logos-hero:nth-of-type(1) {
+    background-image: url("../assets/images/ts.svg");
+  }
+  .logos-hero:nth-of-type(2) {
+    background-image: url("../assets/images/css.svg");
+  }
+  .logos-hero:nth-of-type(3) {
+    background-image: url("../assets/images/python.svg");
+  }
+  .logos-hero:nth-of-type(4) {
+    background-image: url("../assets/images/scala.svg");
+  }
+  .logos-hero:nth-of-type(5) {
+    background-image: url("../assets/images/cplus.svg");
+  }
+  .logos-hero:nth-of-type(6) {
+    background-image: url("../assets/images/ruby.svg");
+  }
+  .logos-hero:nth-of-type(7) {
+    background-image: url("../assets/images/sass.svg");
+  }
+  .logos-hero:nth-of-type(8) {
+    background-image: url("../assets/images/go.svg");
+  }
+  .logos-hero:nth-of-type(9) {
+    background-image: url("../assets/images/xml.svg");
+  }
+  
+  @media screen and (min-width: 576px) {
+    .hero__description {
+      width: 540px;
+    }
+    .hero-image {
+      width: 576px;
+    }
+    .logos-hero-container {
+      width: 576px;
+      gap: 23px;
+    }
+    .logos-hero {
+      width: 117px;
+      height: 117px;
+      background-image: url("../assets/images/apex.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: opacity .75s linear 0s;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero__description {
+      width: 720px;
+    }
+    .hero__description a {
+      width: 125px;
+    }
+    .hero-image {
+      width: 720px;
+    }
+    .logos-hero-container {
+      width: 720px;
+      gap: 40px;
+    }
+    .logos-hero {
+      width: 117px;
+      height: 117px;
+    }
+  }
+  
+  @media screen and (min-width:992px) {
+    body {
+      min-width: 992px;
+    }
+    .hero__body {
+      flex-direction: row;
+      align-items: center;
+      width: 960px;
+      margin: 0 auto;
+    }
+    .hero__description {
+      text-align: left;
+    }
+    .hero__description a {
+      text-align: center;
+    }
+    .hero-imgvid-container {
+      width: 480px;
+    }
+    .hero-image {
+      width: 480px;
+    }
+    .logos-hero-container {
+      width: 960px;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 80px;
+      gap: 40px;
+    }
+    .logos-hero {
+      width: 130px;
+      height: 130px;
+    }
+    .logos-hero:nth-of-type(7) {
+      display: none;
+    }
+    .logos-hero:nth-of-type(8) {
+      display: none;
+    }
+    .logos-hero:nth-of-type(9) {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .hero__body, .logos-hero-container {
+      width: 1140px;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+  
+  }
