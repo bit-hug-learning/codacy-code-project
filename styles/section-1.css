@@ -38,17 +38,10 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-  .body {
+  body {
     min-width: 320px;
     margin: 0px;
-    /* font-family: 'Open Sans', sans-serif; */
-    /* color: rgba(250, 250, 250, 0.75); */
-  }
-  .hero {
-    /* height: 1145px; */
-    /* background: linear-gradient(135deg,#27326e, #4c6cd3 120%); */
-
+    font-family: 'Open Sans', sans-serif;
   }
   .hero__body {
     display: flex;
@@ -65,34 +58,29 @@
   .hero__title {
     margin-bottom: 2rem;
     font-size: 2rem;
-
   }
-  .hero__description p {
+  .hero__copy {
     margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #d5e3e9;
   }
-  .hero__description a {
+  .hero__btn {
     display: inline-block;
     width: 100%;
-    height: 40px;
-    padding: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #1d3060;
-    background-color: #48e0a6;
-    border-radius: 5px;
+    padding: .5rem 1rem;
   }
-  .hero-imgvid-container {
+  .hero__figure {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
   }
-  .hero-image {
+  .hero__image {
     width: 100%;
     opacity: 0.6; 
   }
-  .hero-video {
+  .hero__video-icon {
     position: absolute;
     left: calc(50% - 30px);
     top: calc(50% - 30px);
@@ -102,7 +90,7 @@
     opacity: 0.75;
     box-shadow: rgb(148, 148, 148) 0px 0px 15px -2px;
   }
-  .circle-animation {
+  .hero__video-animation {
     position: absolute;
     left: calc(50% - 30px);
     top: calc(50% - 30px);
@@ -125,11 +113,13 @@
       transform: scale(1.8);
     }
   }
-  .supported-languages {
+  .hero__copy--languages {
     margin: 40px 0 20px;
     text-align: center;
+    font-weight: bold;
+    opacity: 0.7;
   }
-  .logos-hero-container {
+  .hero__languages-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 80px 80px 80px;
@@ -141,7 +131,7 @@
     margin: 0 auto;
     padding-bottom: 40px;
   }
-  .logos-hero {
+  .hero__languages-item {
     width: 100%;
     height: 100%;
     max-width: 117px;
@@ -150,35 +140,35 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: opacity .75s linear 0s;
-    /* La sgt es una alternativa a justify/align-items del .logos-hero-container */
+    /* La sgt es una alternativa a justify/align-items del .hero__languages-container */
     /* justify-self: center;
     align-self: center; */
   }
-  .logos-hero:nth-of-type(1) {
+  .hero__languages-item:nth-of-type(1) {
     background-image: url("../assets/images/ts.svg");
   }
-  .logos-hero:nth-of-type(2) {
+  .hero__languages-item:nth-of-type(2) {
     background-image: url("../assets/images/css.svg");
   }
-  .logos-hero:nth-of-type(3) {
+  .hero__languages-item:nth-of-type(3) {
     background-image: url("../assets/images/python.svg");
   }
-  .logos-hero:nth-of-type(4) {
+  .hero__languages-item:nth-of-type(4) {
     background-image: url("../assets/images/scala.svg");
   }
-  .logos-hero:nth-of-type(5) {
+  .hero__languages-item:nth-of-type(5) {
     background-image: url("../assets/images/cplus.svg");
   }
-  .logos-hero:nth-of-type(6) {
+  .hero__languages-item:nth-of-type(6) {
     background-image: url("../assets/images/ruby.svg");
   }
-  .logos-hero:nth-of-type(7) {
+  .hero__languages-item:nth-of-type(7) {
     background-image: url("../assets/images/sass.svg");
   }
-  .logos-hero:nth-of-type(8) {
+  .hero__languages-item:nth-of-type(8) {
     background-image: url("../assets/images/go.svg");
   }
-  .logos-hero:nth-of-type(9) {
+  .hero__languages-item:nth-of-type(9) {
     background-image: url("../assets/images/xml.svg");
   }
   
@@ -186,14 +176,14 @@
     .hero__description {
       width: 540px;
     }
-    .hero-image {
+    .hero__image {
       width: 576px;
     }
-    .logos-hero-container {
+    .hero__languages-container {
       width: 576px;
       gap: 23px;
     }
-    .logos-hero {
+    .hero__languages-item {
       width: 117px;
       height: 117px;
       background-image: url("../assets/images/apex.svg");
@@ -207,17 +197,21 @@
     .hero__description {
       width: 720px;
     }
-    .hero__description a {
+    /* Ejemplo de quiebre de cascada al elevar las especificidades */
+    /* .hero__description a {
+      width: 425px;
+    } */
+    .hero__btn {
       width: 125px;
     }
-    .hero-image {
+    .hero__image {
       width: 720px;
     }
-    .logos-hero-container {
+    .hero__languages-container {
       width: 720px;
       gap: 40px;
     }
-    .logos-hero {
+    .hero__languages-item {
       width: 117px;
       height: 117px;
     }
@@ -236,38 +230,35 @@
     .hero__description {
       text-align: left;
     }
-    .hero__description a {
-      text-align: center;
-    }
-    .hero-imgvid-container {
+    .hero__figure {
       width: 480px;
     }
-    .hero-image {
+    .hero__image {
       width: 480px;
     }
-    .logos-hero-container {
+    .hero__languages-container {
       width: 960px;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: 80px;
       gap: 40px;
     }
-    .logos-hero {
+    .hero__languages-item {
       width: 130px;
       height: 130px;
     }
-    .logos-hero:nth-of-type(7) {
+    .hero__languages-item:nth-of-type(7) {
       display: none;
     }
-    .logos-hero:nth-of-type(8) {
+    .hero__languages-item:nth-of-type(8) {
       display: none;
     }
-    .logos-hero:nth-of-type(9) {
+    .hero__languages-item:nth-of-type(9) {
       display: none;
     }
   }
   
   @media screen and (min-width: 1200px) {
-    .hero__body, .logos-hero-container {
+    .hero__body, .hero__languages-container {
       width: 1140px;
     }
   }

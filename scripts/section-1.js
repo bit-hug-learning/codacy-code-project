@@ -1,4 +1,4 @@
-const elem = document.querySelectorAll(".logos-hero");
+const elem = document.querySelectorAll(".hero__languages-item");
     var leng = [
     'url("../assets/images/apex.svg")',
     'url("../assets/images/ts.svg")',
