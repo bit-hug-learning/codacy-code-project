@@ -1,9 +1,14 @@
-# codacy-code-project
+#Welcome to Section-1 Hero
 
-Every section is going to have its own branch. Main branch shouldn't be touched.
-This project is going to be mobile first.
-We're gonna use BEM methodology.
- 
+## codacy-code-project
+
+
+### Specifications
+- Every section is going to have its own branch. Main branch shouldn't be touched.
+- This project is going to be mobile first.
+- We're gonna use BEM methodology for CSS.
+- All commits messages, files and classnames will be in english.
+
 ### Width-breakpoints
 (Recommended to use max-width and min-width)
 
