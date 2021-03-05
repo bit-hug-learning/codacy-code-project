@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section-4 {
+    display: grid;
+    grid-template-columns: minmax(280px, 1000px);
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 20px;
+}
+.section-4__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, fit-content);
+    gap: 20px;
+}
+.section-4__img {
+    width: 100%;
+}
+.section-4__img img {
+    width: 100%;
+}
+.section-4__info {
+    display: grid;
+    grid-template-columns: minmax(280px, 500px);
+    grid-template-rows: repeat(4, fit-content);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.section-4__list-item {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    background-image: url('https://www.codacy.com/landing-page-assets/images/icons/check-o.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    list-style: none;
+}
+.section-4__list-item img {
+    width: 20px;
+}
+
+.section-4__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    text-decoration: none;
+}
