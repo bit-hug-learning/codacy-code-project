@@ -136,7 +136,7 @@
     height: 100%;
     max-width: 117px;
     max-height: 117px;
-    background-image: url("../assets/images/apex.svg");
+    background-image: url("../../assets/images/apex.svg");
     background-position: center;
     background-repeat: no-repeat;
     transition: opacity .75s linear 0s;
