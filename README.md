@@ -1,7 +1,4 @@
-#Welcome to Section-1 Hero
-
-## codacy-code-project
-
+# codacy-code-project
 
 ### Specifications
 - Every section is going to have its own branch. Main branch shouldn't be touched.
