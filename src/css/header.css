@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+}
+
+.header .logo{
+    padding: 5px 0;
+    margin-right: 16px;
+}
+
+.header .logo-img{
+    height: 40px;
+}
+
+.navbar-toggler{
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: rgba(255,255,255,.7);
+    border-color: rgba(255,255,255,.1);
+    cursor: pointer;
+}
+
+.navbar-toggler-icon{
+    background-image: url('../assets/images/icons8-menu.svg');
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.header .navbar-ul{
+    list-style: none;
+}
