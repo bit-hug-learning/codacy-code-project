@@ -1,0 +1,18 @@
+.hosting-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.hosting-option {
+  display: flex;
+}
+
+.hosting-option__image {
+  height: 55px;
+}
+
+@media (min-width: 768px) {
+  .hosting-options {
+    flex-direction: row;
+  }
+}

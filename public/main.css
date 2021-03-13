@@ -1,4 +1,5 @@
-@import "../src/css/variables.css";
-@import "../src/css/settings.css";
+@import '../src/css/variables.css';
+@import '../src/css/settings.css';
 
 /* ---- Import your styles after this line ---- */
+@import '../src/css/section-5.css';
