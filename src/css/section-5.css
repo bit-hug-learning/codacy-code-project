@@ -1,3 +1,8 @@
+.section-5 {
+  max-width: 540px;
+  margin: auto;
+}
+
 .hosting-options {
   display: flex;
   flex-direction: column;
@@ -14,5 +19,15 @@
 @media (min-width: 768px) {
   .hosting-options {
     flex-direction: row;
+  }
+
+  .section-5 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-5 {
+    max-width: 960px;
   }
 }
