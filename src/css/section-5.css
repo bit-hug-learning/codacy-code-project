@@ -3,6 +3,11 @@
   margin: auto;
 }
 
+.section-5 a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 .hosting-options {
   display: flex;
   flex-direction: column;
@@ -14,6 +19,7 @@
 
 .hosting-option__image {
   height: 55px;
+  margin-right: 1rem;
 }
 
 @media (min-width: 768px) {
