@@ -1,3 +1,24 @@
+.section-5 {
+  max-width: 540px;
+  margin: auto;
+  padding: 100px 0;
+  line-height: 1.8;
+}
+
+.section-5 a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.section-5 a:hover {
+  color: var(--secondary-light-color);
+}
+
+.section-5 p {
+  color: #d5e3e9;
+}
+
 .hosting-options {
   display: flex;
   flex-direction: column;
@@ -5,14 +26,52 @@
 
 .hosting-option {
   display: flex;
+  padding: 1rem 3rem;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hosting-option__image {
   height: 55px;
+  margin-right: 1rem;
+}
+
+.section-5__center {
+  text-align: center;
+}
+
+.section-5__center h3 {
+  color: #9fb0b9;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.section-5__center h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
   .hosting-options {
     flex-direction: row;
+  }
+
+  .section-5 {
+    max-width: 720px;
+  }
+
+  .hosting-option {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hosting-option:first-child {
+    border-right: 1px solid #d5e3e9;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-5 {
+    max-width: 960px;
   }
 }
