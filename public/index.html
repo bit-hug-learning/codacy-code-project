@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codacy Code Project</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <header class="header"></header>
     <main class="main">
-        <section class="section-1 hero bg-gradient"></section>
-        <section class="section-2 bg-light"></section>
+        <section class="section-1 hero bg-gradient">
+            <div class="hero__body">
+              <div class="hero__description">
+                <h1 class="hero__title">
+                  Automate code reviews on your commits and pull requests
+                </h1>
+                <p class="hero__copy">
+                  Check your code quality and keep track of your technical debt for more than 30 programming languages. Seamlessly Integrated within your development workflow.
+                </p>
+                <a class="hero__btn btn">Get Started</a>
+              </div>
+              <div class="hero__figure">
+                <img class="hero__image" src="../src/assets/images/home-hero-image.svg" alt="Imagen de fondo">
+                <img class="hero__video-icon" src="https://i.postimg.cc/HsNRjWZ1/Red-and-Black-Circle-Modern-Restaurant-Logo-1.png" alt="logo video">
+                <div class="hero__video-animation"></div>
+              </div>
+            </div>
+            <p class="hero__copy hero__copy--languages">
+              More than 30 supported languages
+            </p>
+            <div class="hero__languages-container">
+                <div class="hero__languages-item"></div>
+                <div class="hero__languages-item"></div>
+                <div class="hero__languages-item"></div>
+                <div class="hero__languages-item"></div>
+                <div class="hero__languages-item"></div>
+                <div class="hero__languages-item"></div>
+                <div class="hero__languages-item"></div>
+                <div class="hero__languages-item"></div>
+                <div class="hero__languages-item"></div>
+            </div>
+        </section>
+        <section class="section-2 bg-light">
+          <article class="card__article">
+            <picture class="card__picture">
+              <img
+                class="card__image"
+                src="https://www.codacy.com/landing-page-assets/images/home/home-save-time.svg"
+                alt=""
+              />
+            </picture>
+            <div class="card__body">
+              <h2 class="card__title">Save up to 60% in code reviews</h2>
+              <p class="card__text">
+                Maintain your code quality by blocking merges of pull requests
+                based on your personal quality rules.
+              </p>
+              <a class="boton" href="" role="button">See all features</a>
+            </div>
+          </article>
+        </section>
         <section class="section-3"></section>
         <section class="section-4 bg-light"></section>
         <section class="section-5">
@@ -42,6 +91,6 @@
         <section class="section-7"></section>
     </main>
     <footer class="footer"></footer>
-    <script src="../src/scripts/"></script>
+    <script src="../src/scripts/section-1.js"></script>
 </body>
 </html>
