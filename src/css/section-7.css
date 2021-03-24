@@ -1,0 +1,146 @@
+/* Orden de las propiedades de los selectores:
+1. Posicionamiento: display, position(static, relative, absolute, etc), etc.
+2. Modelo caja: content(width,height,min/max), padding, border, margin
+3. Tipografía: font-family, font-size, font-weight, line-height, etc.
+4. Visuales-estética: color, background,  border-radius, box-shadow, etc.
+5. Otros: transition, animation-, etc.  */
+
+  /* 
+  display:
+  position: 
+  left/right/top/bottom: 
+
+  width/(min-max): 
+  height/(min-max): 
+  padding:
+  margin: 
+  border:
+
+  font-family:
+  font-size:
+  font-weight:
+  line-height:
+
+  color:
+  background: 
+  border-radius: 
+  box-shadow: 
+  cursor: 
+
+  transition:
+  animation-name: 
+  animation-duration: 
+  animation-iteration-count:  
+  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+.section-7 {
+  max-width: 540px;
+  padding: 2rem 15px 8rem;
+  margin: 0 auto;
+}
+.section-7__copy {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #d5e3e9;
+  opacity: 0.7;
+}
+.section-7__companies-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5,70px);
+  gap: 50px 3vw;
+  justify-items: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+.section-7__companies-item {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/autodesk.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-7__companies-item:nth-child(2) {
+  background-image: url("../assets/images/paypal.svg");
+}
+.section-7__companies-item:nth-child(3) {
+  background-image: url("../assets/images/adobe.svg");
+}
+.section-7__companies-item:nth-child(4) {
+  background-image: url("../assets/images/schneider-electric.svg");
+}
+.section-7__companies-item:nth-child(5) {
+  background-image: url("../assets/images/octanner.svg");
+}
+.section-7__companies-item:nth-child(6) {
+  background-image: url("../assets/images/blue-bottle.svg");
+}
+.section-7__companies-item:nth-child(7) {
+  background-image: url("../assets/images/delivery-hero.svg");
+}
+.section-7__companies-item:nth-child(8) {
+  background-image: url("../assets/images/toptal.svg");
+}
+.section-7__companies-item:nth-child(9) {
+  background-image: url("../assets/images/cancer.svg");
+}
+.section-7__companies-item:nth-child(10) {
+  background-image: url("../assets/images/deliveroo.svg");
+}
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  .section-7 {
+    max-width: 720px;
+  }
+  .section-7__companies-container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 60px 60px;
+    gap: 50px 20px;
+    padding-top: 3rem;
+  }
+  .section-7__companies-item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-7 {
+    max-width: 960px;
+  }
+  .section-7__companies-container {
+    gap: 60px 20px;
+  }
+  .section-7__companies-item {
+    width: 120%;
+    height: 120%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-7 {
+    max-width: 1140px;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+}
