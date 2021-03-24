@@ -4,8 +4,6 @@
 }
 
 .card__article {
-  display: flex;
-  align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
@@ -79,6 +77,8 @@
 @media (min-width: 992px) {
   .card__article {
     max-width: 960px;
+    display: flex;
+    align-items: center;
   }
   .card__body {
     max-width: 50%;
