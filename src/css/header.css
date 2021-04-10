@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: var(--main-bg-color);
 }
 
 .header-icons {
