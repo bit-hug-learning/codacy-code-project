@@ -21,7 +21,7 @@ body {
 /* ---- SECTIONS ---- */
 
 section {
-  height: calc(100vh - 4rem);
+  /* height: calc(100vh - 4rem); */
 }
 
 /* ---- BACKGROUNDS ---- */
@@ -44,10 +44,10 @@ section {
   color: #1d3060;
   font-weight: 700;
   box-shadow: 0 3px 3px rgb(34 47 69 / 10%);
-  padding: .8rem 1rem;
+  padding: .4rem 1rem;
   font-size: 1rem;
   line-height: 1.8;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   margin-bottom: 0.5rem;
   border: 1px solid;
   cursor: pointer;
@@ -55,7 +55,8 @@ section {
 
 .btn:focus,
 .btn:hover {
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   box-shadow: 0 5px 8px rgb(34 47 69 / 20%);
 }
 
@@ -77,6 +78,8 @@ section {
 /* Outlined */
 .btn-outlined {
   background-color: transparent;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn-outlined:not(.btn-secondary) {
@@ -96,5 +99,5 @@ section {
 
 .btn-outlined.btn-secondary:hover {
   color: white;
-  background-color: var(--secondary-color)
+  background-color: var(--secondary-color);
 }

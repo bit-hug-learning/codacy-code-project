@@ -1,4 +1,7 @@
-# codacy-code-project
+#Welcome to Section-1 Hero
+
+## codacy-code-project
+
 
 ### Specifications
 - Every section is going to have its own branch. Main branch shouldn't be touched.
@@ -20,9 +23,9 @@
 - Header: -> Cristian & Franco
 - Section 1: Hero -> Gonzalo
 - Section 2: -> Santiago
-- Section 3: -> Sarley 
-- Section 4: -> Julián & Aleja
+- Section 3: -> Sarley (missing)
+- Section 4: -> Julián & Aleja (missing)
 - Section 5: -> Kevin
-- Section 6: Carousel -> Rafa 
+- Section 6: Carousel -> Rafa (missing)
 - Section 7: -> Gonzalo
-- Section 8: Footer -> 
+- Section 8: Footer -> Gonzalo (missing)
