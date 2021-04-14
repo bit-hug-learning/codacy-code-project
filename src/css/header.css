@@ -1,0 +1,129 @@
+.top-fixed {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--main-bg-color);
+}
+
+.header-icons {
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+.header .logo {
+  padding: 5px 0;
+  margin-right: 16px;
+}
+
+.header .logo-img {
+  height: 40px;
+}
+
+.navbar-toggler{
+  display: none;
+}
+
+.header .navbar{
+  display: inherit;
+}
+
+.header .navbar-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  font-weight: 600;
+  display: inherit;
+  align-items: center;
+  display: flex;
+}
+
+.header .navbar-ul li{
+  padding: 0 1em;
+}
+
+@media (max-width: 992px){
+  .top-fixed{
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  .header-icons{
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    height: fit-content;
+    display: block;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("../assets/images/menu.png");
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .header .navbar-label{
+    width: -webkit-fill-available;
+  }
+
+  .header .navbar {
+    text-align: end;
+    background: #4e7fff;
+    height: calc(100vh - 100px);
+    padding: 20px 20px;
+    width: -webkit-fill-available;
+    display: block;
+    transition: all 0.3s ease;
+    right: -100px;
+    left: auto;
+  }
+
+  .header .navbar-ul{
+    display: block;
+  }
+
+  .navbar-toggler-icon:checked ~ .navbar{
+    display: none;
+  }
+
+  .header .navbar-ul li {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px){
+  .header-icons {
+    justify-content: space-around;
+    width: -webkit-fill-available;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  .header .navbar {
+    padding: 20px 70px;
+  }
+}

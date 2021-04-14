@@ -44,7 +44,7 @@ section {
   color: #1d3060;
   font-weight: 700;
   box-shadow: 0 3px 3px rgb(34 47 69 / 10%);
-  padding: 0.8rem 1rem;
+  padding: .4rem 1rem;
   font-size: 1rem;
   line-height: 1.8;
   border-radius: 0.25rem;
@@ -78,6 +78,8 @@ section {
 /* Outlined */
 .btn-outlined {
   background-color: transparent;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn-outlined:not(.btn-secondary) {
