@@ -154,10 +154,10 @@ img{
 @media (min-width: 992px)
 {
     .col-lg-6{
-        flex: 0 0 50%;
+        /* flex: 0 0 50%; */
         flex-grow: 0;
         flex-shrink: 0;
         
-        max-width: 50%;
+        /* max-width: 100%; */
     }
 }
