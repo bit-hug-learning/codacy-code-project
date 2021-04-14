@@ -1,0 +1,268 @@
+/* Orden de las propiedades de los selectores:
+1. Posicionamiento: display, position(static, relative, absolute, etc), etc.
+2. Modelo caja: content(width,height,min/max), padding, border, margin
+3. Tipografía: font-family, font-size, font-weight, line-height, etc.
+4. Visuales-estética: color, background,  border-radius, box-shadow, etc.
+5. Otros: transition, animation-, etc.  */
+
+  /* 
+  display:
+  position: 
+  left/right/top/bottom: 
+
+  width/(min-max): 
+  height/(min-max): 
+  padding:
+  margin: 
+  border:
+
+  font-family:
+  font-size:
+  font-weight:
+  line-height:
+
+  color:
+  background: 
+  border-radius: 
+  box-shadow: 
+  cursor: 
+
+  transition:
+  animation-name: 
+  animation-duration: 
+  animation-iteration-count:  
+  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-width: 320px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .hero__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+  }
+  .hero__description {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    align-self: center;
+  }
+  .hero__title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .hero__copy {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #d5e3e9;
+  }
+  .hero__btn {
+    display: inline-block;
+    width: 100%;
+    padding: .5rem 1rem;
+  }
+  .hero__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  .hero__image {
+    width: 100%;
+    opacity: 0.6; 
+  }
+  .hero__video-icon {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.75;
+    box-shadow: rgb(148, 148, 148) 0px 0px 15px -2px;
+  }
+  .hero__video-animation {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    animation-name: pulsing-circle;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulsing-circle {
+    0% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.8);
+    }
+  }
+  .hero__copy--languages {
+    margin: 40px 0 20px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.7;
+  }
+  .hero__languages-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px;
+    gap: 4vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .hero__languages-item {
+    width: 100%;
+    height: 100%;
+    max-width: 117px;
+    max-height: 117px;
+    background-image: url("../assets/images/apex.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity .75s linear 0s;
+    /* La sgt es una alternativa a justify/align-items del .hero__languages-container */
+    /* justify-self: center;
+    align-self: center; */
+  }
+  .hero__languages-item:nth-of-type(1) {
+    background-image: url("../assets/images/ts.svg");
+  }
+  .hero__languages-item:nth-of-type(2) {
+    background-image: url("../assets/images/css.svg");
+  }
+  .hero__languages-item:nth-of-type(3) {
+    background-image: url("../assets/images/python.svg");
+  }
+  .hero__languages-item:nth-of-type(4) {
+    background-image: url("../assets/images/scala.svg");
+  }
+  .hero__languages-item:nth-of-type(5) {
+    background-image: url("../assets/images/cplus.svg");
+  }
+  .hero__languages-item:nth-of-type(6) {
+    background-image: url("../assets/images/ruby.svg");
+  }
+  .hero__languages-item:nth-of-type(7) {
+    background-image: url("../assets/images/sass.svg");
+  }
+  .hero__languages-item:nth-of-type(8) {
+    background-image: url("../assets/images/go.svg");
+  }
+  .hero__languages-item:nth-of-type(9) {
+    background-image: url("../assets/images/xml.svg");
+  }
+  
+  @media screen and (min-width: 576px) {
+    .hero__description {
+      width: 540px;
+    }
+    .hero__image {
+      width: 576px;
+    }
+    .hero__languages-container {
+      width: 576px;
+      gap: 23px;
+    }
+    .hero__languages-item {
+      width: 117px;
+      height: 117px;
+      background-image: url("../assets/images/apex.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: opacity .75s linear 0s;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero__description {
+      width: 720px;
+    }
+    /* Ejemplo de quiebre de cascada al elevar las especificidades */
+    /* .hero__description a {
+      width: 425px;
+    } */
+    .hero__btn {
+      width: 125px;
+    }
+    .hero__image {
+      width: 720px;
+    }
+    .hero__languages-container {
+      width: 720px;
+      gap: 40px;
+    }
+    .hero__languages-item {
+      width: 117px;
+      height: 117px;
+    }
+  }
+  
+  @media screen and (min-width:992px) {
+    body {
+      min-width: 992px;
+    }
+    .hero__body {
+      flex-direction: row;
+      align-items: center;
+      width: 960px;
+      margin: 0 auto;
+    }
+    .hero__description {
+      text-align: left;
+    }
+    .hero__figure {
+      width: 480px;
+    }
+    .hero__image {
+      width: 480px;
+    }
+    .hero__languages-container {
+      width: 960px;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 80px;
+      gap: 40px;
+    }
+    .hero__languages-item {
+      width: 130px;
+      height: 130px;
+    }
+    .hero__languages-item:nth-of-type(7) {
+      display: none;
+    }
+    .hero__languages-item:nth-of-type(8) {
+      display: none;
+    }
+    .hero__languages-item:nth-of-type(9) {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .hero__body, .hero__languages-container {
+      width: 1140px;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+  
+  }
