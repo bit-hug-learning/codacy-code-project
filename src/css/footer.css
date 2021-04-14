@@ -1,0 +1,207 @@
+/* Orden de las propiedades de los selectores:
+1. Posicionamiento: display, position(static, relative, absolute, etc), etc.
+2. Modelo caja: content(width,height,min/max), padding, border, margin
+3. Tipografía: font-family, font-size, font-weight, line-height, etc.
+4. Visuales-estética: color, background,  border-radius, box-shadow, etc.
+5. Otros: transition, animation-, etc.  */
+
+  /* 
+  display:
+  position: 
+  left/right/top/bottom: 
+
+  width/(min-max): 
+  height/(min-max): 
+  padding:
+  margin: 
+  border:
+
+  font-family:
+  font-size:
+  font-weight:
+  line-height:
+
+  color:
+  background: 
+  border-radius: 
+  box-shadow: 
+  cursor: 
+
+  transition:
+  animation-name: 
+  animation-duration: 
+  animation-iteration-count:  
+  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+  }
+  .footer__cta {
+    width: 100%;
+    padding: 3rem 15px;
+    text-align: center;
+    align-self: center;
+  }
+  .footer__title {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .footer__btn {
+    display: inline-block;
+    width: 100%;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  .footer__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 540px;
+    margin-top: 60px;
+  }
+  .footer__list {
+    list-style: none;
+  }
+  .footer__list.second {
+    display: none;
+  }
+  .footer__list.second.hide-show {
+    display: block;
+  }
+  .footer__item {
+    position: relative;
+    margin-right: 20px;
+  }
+  .footer__item:not(.second) {
+    padding: 25px;
+    padding-right: 0;
+  }
+  .footer__arrow-up-down {
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: url("../assets/images_footer/arrow.svg") center/cover no-repeat;
+    filter: invert(68%) sepia(10%) saturate(462%) hue-rotate(160deg) brightness(91%) contrast(86%);
+  }
+  .footer__item.second {
+    margin: 8px 0;
+  }
+
+  .footer__item.second:first-of-type {
+    margin-top: 20px;
+  }
+  .footer__list {
+    width: 100%;
+  }
+  .footer__link {
+    display: block;
+    font-weight: 500;
+    color: #8fa0ab;
+    text-decoration: none;
+  }
+  .footer__link.second {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #7b8390;
+  }
+  .footer__link.second:hover {
+    color: white;
+    transition: .25s;
+  }
+  .social-media-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: brightness(0) saturate(100%) invert(88%) sepia(10%) saturate(151%) hue-rotate(179deg) brightness(88%) contrast(88%);
+  }
+  .footer__text {
+    width: 95%;
+    padding: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-size: calc(0.6875rem);
+    color: #7b888f;
+  }
+
+  @media screen and (min-width: 576px) {
+    .footer__btn {
+      width: 510px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .footer__btn {
+      width: 690px;
+    }
+    .footer__arrow-up-down {
+      display: none;
+    }
+    .footer__item {
+      display: inline-block;
+      margin-right: 0;
+    }
+    .footer__item:last-of-type {
+      margin-right: 25px;
+    }
+    .footer__link:not(.second) {
+      cursor: text;
+    }
+    .footer__body {
+      max-width: 750px;
+      margin-top: 20px;
+    }
+    .footer__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer__list.second {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer__list.second.hide-show {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer__text {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-top: 1px solid #364259;
+    }  
+
+  }
+  
+  @media screen and (min-width:992px) {
+    .footer__btn {
+      display: inline;
+    }
+    .footer__body {
+      max-width: 960px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .footer__body {
+      max-width: 1140px;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+  
+  }
