@@ -18,6 +18,10 @@ body {
   color: #fff;
 }
 
+main{
+  margin-top: -66px;
+}
+
 /* ---- SECTIONS ---- */
 
 section {

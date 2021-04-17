@@ -1,12 +1,14 @@
 .top-fixed {
   position: sticky;
-  top: 0;
+  top: -1px;
   right: 0;
   left: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: var(--main-bg-color);
+  /* background: var(--main-bg-color); */
+  z-index: 10;
+  transition: 0.3s;
 }
 
 .header-icons {
@@ -23,11 +25,16 @@
   height: 40px;
 }
 
-.navbar-toggler{
-  display: none;
+.menu {
+  display: flex;
 }
 
-.header .navbar{
+.navbar-toggler {
+  /* display: none; */
+  opacity: 0;
+}
+
+.header .navbar {
   display: inherit;
 }
 
@@ -43,18 +50,18 @@
   display: flex;
 }
 
-.header .navbar-ul li{
+.header .navbar-ul li {
   padding: 0 1em;
 }
 
-@media (max-width: 992px){
-  .top-fixed{
-    flex-direction: column;
-    align-items: center;    
+@media (max-width: 992px) {
+  .top-fixed {
+    /* flex-direction: column; */
+    align-items: center;
   }
 
-  .header-icons{
-    width: 70%;
+  .header-icons {
+    /* width: 70%; */
     align-items: center;
     justify-content: space-between;
   }
@@ -84,14 +91,31 @@
     background-size: 100% 100%;
   }
 
-  .header .navbar-label{
+  .header .navbar-label {
     width: -webkit-fill-available;
+  }
+
+  .navbar-toggler + .navbar-label {
+    /* display: none; */
+    position: fixed;
+    left: 100%;
+    height: 50vh;
+    transition: 0.35s;
+    /* height: 100%; */
+    top: 65px;
+  }
+
+  .navbar-toggler:checked + .navbar-label {
+    display: block;
+    height: 100vh;
+    left: 0;
+    /* top: 95px; */
   }
 
   .header .navbar {
     text-align: end;
     background: #4e7fff;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 66px);
     padding: 20px 20px;
     width: -webkit-fill-available;
     display: block;
@@ -100,11 +124,11 @@
     left: auto;
   }
 
-  .header .navbar-ul{
+  .header .navbar-ul {
     display: block;
   }
 
-  .navbar-toggler-icon:checked ~ .navbar{
+  .navbar-toggler-icon:checked ~ .navbar {
     display: none;
   }
 
@@ -113,16 +137,29 @@
     padding-right: 1.2rem;
     padding: 0.5rem 1rem;
   }
-}
 
-@media (max-width: 576px){
-  .header-icons {
-    justify-content: space-around;
-    width: -webkit-fill-available;
+  .burguer-icon {
+    position: absolute;
+    margin: 5px;
+    z-index: -1;
+  }
+
+  .burguer-icon div {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px){
+@media (max-width: 576px) {
+  .header-icons {
+    justify-content: space-around;
+    /* width: -webkit-fill-available; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
   .header .navbar {
     padding: 20px 70px;
   }

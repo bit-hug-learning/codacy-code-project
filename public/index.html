@@ -9,26 +9,33 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="top-fixed header">
+    <header id="header" class="top-fixed header">
         <div class="header-icons">
             <a href="/" class="logo">
                 <img src="https://www.codacy.com/landing-page-assets/images/codacy-logo.svg" alt="" class="logo-img">
             </a>
-            <input type="checkbox" name="toggle" class="navbar-toggler navbar-toggler-icon"/>
         </div>
-        <label for="toggle" class="navbar-label">
-            <nav class="navbar">
-                <!-- <i class="fa fa-fw fa-bars menu"></i> -->
-                <ul class="navbar-ul">
-                    <li><a href=""></a>Product</li>
-                    <li><a href=""></a>Pricing</li>
-                    <li><a href=""></a>Self-hosted</li>
-                    <li><a href=""></a>Blog</li>
-                    <li><a href=""></a>Log in</li>
-                    <li><a href="" class="btn btn-outlined">Get Started</a></li>
-                </ul>
-            </nav>
-        </label>
+        <div class="menu">
+          <div class="burguer-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <input type="checkbox" name="toggle" class="navbar-toggler navbar-toggler-icon"/>
+          <label for="toggle" class="navbar-label">
+              <nav class="navbar">
+                  <!-- <i class="fa fa-fw fa-bars menu"></i> -->
+                  <ul class="navbar-ul">
+                      <li><a href=""></a>Product</li>
+                      <li><a href=""></a>Pricing</li>
+                      <li><a href=""></a>Self-hosted</li>
+                      <li><a href=""></a>Blog</li>
+                      <li><a href=""></a>Log in</li>
+                      <li><a href="" class="btn btn-outlined">Get Started</a></li>
+                  </ul>
+              </nav>
+          </label>
+        </div>
     </header>
     <main class="main">
         <section class="section-1 hero bg-gradient">
@@ -296,6 +303,7 @@
       </div>
 
     </footer>
+    <script src="../src/scripts/header.js"></script>
     <script src="../src/scripts/section-1.js"></script>
     <script src="../src/scripts/footer.js"></script>
 
