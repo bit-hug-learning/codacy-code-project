@@ -1,4 +1,5 @@
 # codacy-code-project
+We developed this webpage with the same design that codacy.com as an exercise project to train ourselves.
 
 Every section is going to have its own branch. Main branch shouldn't be touched.
 This project is going to be mobile first.
