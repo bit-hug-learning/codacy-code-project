@@ -1,0 +1,107 @@
+/* ---- RESET ---- */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  font-family: Open-sans, Arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+main{
+  margin-top: -66px;
+}
+
+/* ---- SECTIONS ---- */
+
+section {
+  /* height: calc(100vh - 4rem); */
+}
+
+/* ---- BACKGROUNDS ---- */
+
+.bg-gradient {
+  background-image: linear-gradient(-45deg, #4c6cd3, #27326d);
+  background-repeat: repeat-x;
+}
+
+.bg-light {
+  background-color: var(--light-bg-color);
+}
+
+/* ---- BUTTONS ---- */
+
+/* Primary */
+.btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #1d3060;
+  font-weight: 700;
+  box-shadow: 0 3px 3px rgb(34 47 69 / 10%);
+  padding: .4rem 1rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btn:hover {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: 0 5px 8px rgb(34 47 69 / 20%);
+}
+
+.btn:hover {
+  background-color: var(--primary-light-color);
+}
+
+/* Secondary */
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-light-color);
+}
+
+/* Outlined */
+.btn-outlined {
+  background-color: transparent;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-outlined:not(.btn-secondary) {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outlined.btn-secondary {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outlined:not(.btn-secondary):hover {
+  background-color: var(--primary-color);
+  color: #1d3060;
+}
+
+.btn-outlined.btn-secondary:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}

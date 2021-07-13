@@ -1,0 +1,163 @@
+*, ::after, ::before
+{
+    box-sizing: border-box;
+}
+.section-3{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-left: auto;
+}
+article,section, div{
+    display: block;
+}
+.card{
+    padding-bottom: 6rem !important;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.aling-item-center{
+    align-items: center !important;
+}
+.card_body{
+    display: flex;
+    max-width: 100%;
+    padding: 0 15px;
+    height: auto;
+}
+.card_title{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+.card_text{
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 32px;
+    color: #d5e3e9;
+}
+.mb-3{
+    margin-bottom: 2rem !important;
+}
+ol{
+    color: #d5e3e9;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol.items-list li::before{
+    display: inline-block;
+    content: counter(item) ".";
+    counter-increment: item;
+    width: 2rem;
+    margin-left: -2em;
+    color: #4e7fff;
+    font-weight: 700;
+}
+ol.items-list{
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+}
+ol.items-list li{
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2em;
+    font-weight: 500;
+}
+h2{
+    font-size: 2rem;
+}
+.col-lg-6, .col-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+img.card__image{
+    float: right;
+}
+.card__picture {
+    width: 100%;
+    max-width: 100%;
+}
+img{
+    vertical-align: middle;
+}
+.card__image {
+    max-width: 100%;
+}
+
+@media (min-width: 992px)
+{
+    .feature-image.ml{
+        margin-left: 30px;
+    }
+}
+@media (min-width: 992px)
+{
+    .feature-image{
+        width: 120%;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .section-3{
+        max-width: 1140px;
+    }
+}
+/*
+@media (min-width: 992px)
+{
+    .section-3{
+        max-width: 960px;
+    }
+}
+@media (min-width: 768px)
+{
+    .section-3{
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px)
+{
+    .section-3{
+        max-width: 540px;
+    }
+}
+*/
+@media (min-width: 992px)
+{
+    .pr-lg-4{
+        padding-right: 3rem !important;
+    }
+}
+@media (min-width: 992px)
+{
+    .order{
+        padding-right: 1;
+    }
+}
+@media (min-width: 992px)
+{
+    .col-lg-6{
+        /* flex: 0 0 50%; */
+        flex-grow: 0;
+        flex-shrink: 0;
+        
+        /* max-width: 100%; */
+    }
+}
